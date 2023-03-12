@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Proyectos IOT</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+	</head>
+	<body>
+	<div class="svg-wrap">
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-left" d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z"></path>
+      </svg>
+
+      <svg width="64" height="64" viewBox="0 0 64 64">
+        <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
+      </svg>
+    </div>
+
+   <div class="container-fluid">
+
+    <section id="header">
+
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">Proyectos IOT</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Inicio</a></li>
+              <li><a href="#about">Conoce mas</a></li>              
+              <li><a href="#portfolio">Proyectos</a></li>
+              <li><a href="#team">Videos</a></li>
+            </ul>
+          </div> 
+        </div> 
+      </nav>
+
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z"/>
+            </svg>
+          </div> 
+          
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span>Foto previa</span>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Siguiente foto</span>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+        var dataHeader = [
+                            {
+                              bigImage :"images/slide-1.jpg",
+                              title : "Minimal & Clean",
+							  author : "Templatestock"
+                            },
+                            {
+                              bigImage :"images/slide-2.jpg",
+                              title : "I'm A Creative Theme",
+                              author : "Templatestock"
+                            },
+                            {
+                              bigImage :"images/slide-3.jpg",
+                              title : "Achieve Success",
+                              author : "Templatestock"
+                            }
+                        ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
+            loaderSVG.show()
+        </script>
+
+      </div>
+    </section>
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>Conoce <span>más</span></h2>
+        <p> Esta pagina web tiene como objetivo estudiar, investigar y presentar los temas propuestos en la Guía 3 y con base en lo aprendido en las tutorías realizadas.
+          También se trabajará con diferentes materiales y conocimientos adquiridos durante las tutorías y el trabajo autónomo con herramientas como lo son <strong>Mblock, Tinkercad</strong>, entre otros, con las cuales nos apoyaremos para dar solución a la guía, investigando temas desconocidos para entender mejor como dar solución a los problemas que se nos presentaran en el desarrollo de las actividades.
+          </p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/1.png)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-code"></i></div>
+                <div class="about-detail">
+                  <h4>Objetivos</h4><br>
+                  <p>•	Solucionar mediante diferentes métodos como lluvia de ideas, investigaciones, consultas o tutorías las dudas que se nos presenten acerca de los proyectos.<br><br>
+                    •	Analizar cada uno de los proyectos, para comprender que datos obtendremos de entrada y cuales se esperan como salida, con la finalidad de construir prototipos de robótica.<br><br>•	Estructurar y desarrollar ideas para presentar las diferentes soluciones propuestas tanto para los proyectos como los problemas que se nos van presentando.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </section>
+
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Proyectos</h2>
+        <p>Cada uno de los proyectos a continuación fue desarrollado por el equipo de trabajo</p>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">Todos</li>
+            <li data-filter=".branding" class="filter">Leds</li> 
+            <li data-filter=".branding2" class="filter">Motores y Servomotores</li> 
+            <li data-filter=".branding3" class="filter">Ultrasonido, servo y leds</li> 
+            <li data-filter=".graphic" class="filter">Sensor Infrarrojo</li> 
+            <li data-filter=".graphic2" class="filter">Sensor de movimiento</li>
+            <li data-filter=".printing" class="filter">Sensor de ruido</li> 
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <script type="text/javascript">
+            var portfolio = [
+                    {
+                      category : "branding",
+                      image : "images/p-1.png",
+                      title : "Practica <span>Leds</span>",
+                      link : "#none",
+                      text : "Programación de un semaforo con el uso de 3 leds"
+                    },
+                    {
+                      category : "branding2",
+                      image : "images/p-9.png",
+                      title : "Practica 2 <span>Motores y Servomotores</span>",
+                      link : "#none",
+                      text : "Construcción o simulación de un vehículo programable utilizando Arduino"
+                    },
+                    {
+                      category : "branding3",
+                      image : "images/p-10.jpeg",
+                      title : "Practica 3 <span>Ultrasonido, servo y leds</span>",
+                      link : "#none",
+                      text : "Movimiento de servomotor con respecto al ultrasonido."
+                    },
+                    {
+                      category : "branding3",
+                      image : "images/p-11.jpeg",
+                      title : "Practica 3 <span>Ultrasonido, servo y leds</span>",
+                      link : "#none",
+                      text : "Movimiento de servomotor con respecto al ultrasonido."
+                    },
+                    {
+                      category : "graphic",
+                      image : "images/p-2.png",
+                      title : "Practica <span>Sensor Infrarojo</span>",
+                      link : "#none",
+                      text : "Funcionamiento correcto del sensor infrarrojo."
+                    },
+                    {
+                      category : "graphic",
+                      image : "images/p-3.png",
+                      title : "Practica <span>Sensor Infrarojo</span>",
+                      link : "#none",
+                      text : "Funcionamiento correcto del sensor infrarrojo."
+                    },
+                    {
+                      category : "graphic2",
+                      image : "images/p-3.jpg",
+                      title : "Practica <span>Sensor de movimiento</span>",
+                      link : "#none",
+                      text : "Funcionamiento correcto del sensor de movimiento."
+                    },
+                    {
+                      category : "graphic2",
+                      image : "images/p-3.jpg",
+                      title : "Practica <span>Sensor de movimiento</span>",
+                      link : "#none",
+                      text : "Funcionamiento correcto del sensor de movimiento."
+                    },
+                    {
+                      category : "branding",
+                      image : "images/p-5.png",
+                      title : "Practica <span>Leds</span>",
+                      link : "#none",
+                      text : "Programación de un semaforo con el uso de 3 leds"
+                    },
+                    {
+                      category : "printing",
+                      image : "images/p-6.png",
+                      title : "Practica <span>Sensor de ruido</span>",
+                      link : "#none",
+                      text : "Funcionamiento correcto del sensor de ruido."
+                    },
+                    {
+                      category : "printing",
+                      video: "WhatsApp Video 2023-03-11 at 8.39.05 PM.mp4",
+                      image : "images/p-7.png",
+                      title : "Practica <span>Sensor de ruido</span>",
+                      link : "#none",
+                      text : "Funcionamiento correcto del sensor de ruido."
+                    },
+                ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="light" STYLE="margin:30px 40px 30px">
+      <header class="title">
+        <h2>Videos</h2>
+      </header>
+      <video id="video" width="400" height="350" controls>  
+        <source src="videos\Video_1.mp4">   
+      </video> 
+      <video id="video" width="400" height="350" controls>  
+        <source src="videos\video_2.mp4">   
+      </video>
+      <video id="video" width="600" height="400" controls>  
+        <source src="videos\video_3.mp4">   
+      </video>
+      <video id="video" width="600" height="400" controls STYLE="margin:30px 40px 30px">  
+        <source src="videos\video_4.mp4">   
+      </video>
+      <video id="video" width="600" height="400" controls STYLE="margin:30px 50px 30px">  
+        <source src="videos\video_5.mp4">   
+      </video>
+
+    </section>
+    
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Año 2023 <i class="fa fa-heart"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   </div>
+    <script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
